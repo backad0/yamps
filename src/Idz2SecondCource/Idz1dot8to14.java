@@ -21,7 +21,12 @@ public class Idz1dot8to14 {
         System.out.printf("sum: %d\n", task10(array));
         System.out.printf("sum of even numbers: %d\n", task11(array));
         System.out.printf("sum of numbers in segment: %d\n", task12(array, a, b));
-        task13(array);
+        boolean truth = task13(array);
+        if (truth){
+            System.out.println("All numbers are positive");
+        } else {
+            System.out.println("Not all numbers are positive");
+        }
         System.out.println("Reversed array:");
         task14(array);
         task8and9(array);
@@ -60,19 +65,13 @@ public class Idz1dot8to14 {
         return sum;
     }
 
-    public static void task13(int[] arr) {
-        boolean condition = true;
+    public static boolean task13(int[] arr) {
         for (int Values : arr) {
-            if (Values >= 0) {
-                continue;
+            if (Values < 0) {
+                return false;
             }
-            condition = false;
         }
-        if (!condition) {
-            System.out.println("Not all elements are positive");
-        } else {
-            System.out.println("All elements are positive");
-        }
+        return true;
     }
 
     public static void task14(int[] arr) {
