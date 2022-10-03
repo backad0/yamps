@@ -45,8 +45,8 @@ public class Vector3D {
 
     public static boolean getEquality(Vector3D v1, Vector3D v2) {
         boolean res = true;
-        double var1 = v1.getX() - v2.getX(), var2 = v1.getY() - v2.getY(), var3 = v1.getZ() - v2.getZ();
-        if ((var1 != var2) || (var1 != var3) || (var2 != var3)) res = false;
+        double var1 = v1.getX()/v2.getX(), var2 = v1.getY()/v2.getY(), var3 = v1.getZ()/v2.getZ();
+        if (((var1 != var2) || (var1 != var3) || (var2 != var3)) && (var1<=0)) res = false;
         return res;
     }
 }
