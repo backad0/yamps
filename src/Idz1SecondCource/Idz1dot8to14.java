@@ -1,4 +1,4 @@
-package Idz2SecondCource;
+package Idz1SecondCource;
 
 import java.util.Scanner;
 
