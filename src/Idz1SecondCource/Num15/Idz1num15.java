@@ -1,5 +1,5 @@
-package Idz1SecondCource.Dot15;
-public class Idz1dot15 {
+package Idz1SecondCource.Num15;
+public class Idz1num15 {
     public static void main(String[] args) {
         Point3D point1 = new Point3D(1, 2, 3);
         Point3D point2 = new Point3D(0,0,0);
@@ -13,8 +13,5 @@ public class Idz1dot15 {
         else {
             System.out.println("false");
         }
-
-
     }
-
 }

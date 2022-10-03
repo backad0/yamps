@@ -2,7 +2,7 @@ package Idz1SecondCource;
 
 import java.util.Scanner;
 
-public class Idz1dot8to14 {
+public class Idz1num8to14 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

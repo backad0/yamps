@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static java.lang.Math.abs;
 import static java.lang.Math.pow;
 
-public class Idz1dot1to7 {
+public class Idz1num1to7 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

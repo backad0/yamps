@@ -1,4 +1,4 @@
-package Idz1SecondCource.Dot15;
+package Idz1SecondCource.Num15;
 
 public class Point3D {
     private double x, y, z;
