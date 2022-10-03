@@ -49,4 +49,7 @@ public class Vector3D {
         if (((var1 != var2) || (var1 != var3) || (var2 != var3)) && (var1<=0)) res = false;
         return res;
     }
+    public void show(){
+        System.out.printf("x = %.2f, y = %.2f, z = %.2f\n",x,y,z);
+    }
 }
