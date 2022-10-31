@@ -22,7 +22,7 @@ public class Idz1num8to14 {
         System.out.printf("sum of even numbers: %d\n", task11(array));
         System.out.printf("sum of numbers in segment: %d\n", task12(array, a, b));
         boolean truth = task13(array);
-        if (truth){
+        if (truth) {
             System.out.println("All numbers are positive");
         } else {
             System.out.println("Not all numbers are positive");
@@ -76,18 +76,10 @@ public class Idz1num8to14 {
 
     public static void task14(int[] arr) {
         int elem;
-        if ((arr.length % 2) == 0) {
-            for (int i = 0; i < (arr.length / 2); i++) {
-                elem = arr[i];
-                arr[i] = arr[arr.length - 1 - i];
-                arr[arr.length - i - 1] = elem;
-            }
-        } else {
-            for (int i = 0; i < ((arr.length - 1) / 2); i++) {
-                elem = arr[i];
-                arr[i] = arr[arr.length - 1 - i];
-                arr[arr.length - i - 1] = elem;
-            }
+        for (int i = 0; i < (arr.length / 2); i++) {
+            elem = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - i - 1] = elem;
         }
     }
 }

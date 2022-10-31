@@ -30,6 +30,15 @@ public class Vector3D {
     public double getZ() {
         return z;
     }
+    public void setX(double a){
+        x = a;
+    }
+    public void setY(double a){
+        y = a;
+    }
+    public void setZ(double a){
+        z = a;
+    }
 
     public Vector3D(Point3D a1, Point3D a2) {
         x = a2.getX() - a1.getX();
@@ -44,12 +53,19 @@ public class Vector3D {
     }
 
     public static boolean getEquality(Vector3D v1, Vector3D v2) {
-        boolean res = true;
-        double var1 = v1.getX()/v2.getX(), var2 = v1.getY()/v2.getY(), var3 = v1.getZ()/v2.getZ();
-        if (((var1 != var2) || (var1 != var3) || (var2 != var3)) && (var1<=0)) res = false;
-        return res;
+       /* if ((v1.getX() == 0) || (v1.getY() == 0) || (v1.getZ() == 0) || (v2.getX() == 0) || (v2.getY() == 0) || (v2.getZ() == 0)) {
+            res = false;
+        } else {
+            double var1 = v1.getX() / v2.getX(), var2 = v1.getY() / v2.getY(), var3 = v1.getZ() / v2.getZ();
+            if (((var1 != var2) || (var1 != var3) || (var2 != var3) || (v1.getLength()!=v2.getLength())) && (var1 <= 0)) res = false;
+        }*/
+        if ((v1.getX()!=v2.getX())||(v1.getY()!=v2.getY())||(v1.getZ()!= v2.getZ())){
+            return false;
+        }
+        return true;
     }
-    public void show(){
-        System.out.printf("x = %.2f, y = %.2f, z = %.2f\n",x,y,z);
+
+    public void show() {
+        System.out.printf("x = %.2f, y = %.2f, z = %.2f\n", x, y, z);
     }
 }

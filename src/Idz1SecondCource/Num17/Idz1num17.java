@@ -8,11 +8,11 @@ import static Idz1SecondCource.Num17.Vector3DProcessor.*;
 
 public class Idz1num17 {
     public static void main(String[] args) {
-        Point3D point1 = new Point3D(1, 1, 1);
-        Point3D point2 = new Point3D(2, 2, 2);
+       /* Point3D point1 = new Point3D(1, 0, 0);
+        Point3D point2 = new Point3D(0, 1, 0);*/
 
-        Vector3D p1p2 = new Vector3D(point1, point2);
-        Vector3D vector = new Vector3D(3, 3, 3);
+        Vector3D p1p2 = new Vector3D(1,0,0);
+        Vector3D vector = new Vector3D(0,1,0);
 
         Vector3D sumVector = vectorProcessor_getSum(p1p2, vector);
         sumVector.show();
